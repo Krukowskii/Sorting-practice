@@ -28,6 +28,24 @@ public:
     int Partition(int low, int high);
     void QuickSort(int low, int high);
 
+
+    //Binary Tree
+
+    struct BinaryTree
+    {
+        int value;
+        BinaryTree* left;
+        BinaryTree* right;
+
+        BinaryTree(int val) : value(val), left(nullptr), right(nullptr){};
+    };
+    // build, print and destroy tree
+    void BinaryTreeFunction();                    
+    void insert(BinaryTree*& root, int a);        
+    void PrintInOrder(BinaryTree* root) const;
+    void deleteTree(BinaryTree* root);            
+
+
     //Helpers
     void printVector() const;
     void saveToFile(const string& fileName) const;   
