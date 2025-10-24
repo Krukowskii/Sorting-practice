@@ -84,6 +84,49 @@ void SortingTools::QuickSort(int low, int high)
     }
 }
 
+void SortingTools::BinaryTreeFunction()
+{
+    BinaryTree* root = nullptr;
+    for(auto& el : arr)
+        insert(root, el);
+
+    cout << "Binary tree in-order: ";
+    PrintInOrder(root);
+    cout << "\n";
+
+    deleteTree(root);
+}
+
+void SortingTools::insert(BinaryTree*& root, int a)
+{
+    if(!root){
+        root = new BinaryTree(a);
+        return;
+    }
+
+    if(a < root->value)
+        insert(root->left, a);
+    else
+        insert(root->right, a);
+}
+
+void SortingTools::deleteTree(BinaryTree* root)
+{
+    if(!root) return;
+    deleteTree(root->left);
+    deleteTree(root->right);
+    delete root;
+}
+
+void SortingTools::PrintInOrder(BinaryTree *root) const
+{
+    if(!root) return;
+
+    PrintInOrder(root->left);
+    cout << root->value << " ";
+    PrintInOrder(root->right);
+}
+
 void SortingTools::printVector() const
 {
     for(auto& el : arr)
