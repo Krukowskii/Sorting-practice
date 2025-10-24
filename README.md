@@ -1,32 +1,61 @@
-🧮 Sorting Tools
+<h1 align="center">🧮 Sorting Tools</h1>
+<h3 align="center">Elegant C++ playground for sorting algorithms and data structures</h3>
 
-A simple C++ project demonstrating sorting algorithms and data structures using an object-oriented approach.
+---
 
-📖 Overview
+## 📘 **Overview**
 
-The SortingTools class provides implementations of:
+The **Sorting Tools** project demonstrates classic sorting algorithms and a binary search tree, built using clean, object-oriented C++ design.
 
-Bubble Sort
+It currently includes:
 
-Quick Sort (with median-of-three pivot selection)
+- 🔁 **Bubble Sort**  
+- ⚡ **Quick Sort** (using a *median-of-three* pivot strategy)  
+- 🌳 **Binary Search Tree (BST)** — with insertion and in-order traversal for sorted output  
 
-Binary Search Tree (BST) — supports insertion, traversal, and optional sorting via in-order traversal
+---
 
-It can:
+## 🧠 **What It Can Do**
 
-Generate random integer data
+- 🎲 Generate random integer datasets  
+- 🧩 Sort data using different algorithms  
+- 🌳 Store and traverse data using a Binary Tree  
+- 💾 Save results to a file with `fstream`  
+- 🧱 Serve as a foundation for adding new algorithms or data structures  
 
-Sort it using different algorithms
+---
 
-Store and traverse data using a Binary Tree
+## ⚙️ **Features**
 
-Save results to a file
+- 🧱 **Object-Oriented Architecture**  
+  Clean, modular C++ class design that makes it easy to expand and maintain.  
 
-⚙️ Features
+- 🎲 **Random Data Generator**  
+  Automatically creates test datasets for sorting and tree operations.  
 
-✅ Object-oriented design (C++ class)
-✅ Random data generation
-✅ Bubble Sort and Quick Sort
-✅ Binary Search Tree implementation
-✅ File output via fstream
-✅ Easy to extend with new algorithms and data structures
+- 🔁 **Multiple Sorting Algorithms**  
+  Includes both **Bubble Sort** and **Quick Sort** with a **median-of-three** pivot strategy for efficiency.  
+
+- 🌳 **Binary Search Tree Integration**  
+  Insert, traverse, and sort elements through a tree-based structure.  
+
+- 💾 **File Output Support**  
+  Save generated or sorted data directly to files using `fstream`.  
+
+- 🧩 **Extensible Framework**  
+  Easily add new sorting algorithms or data structures without changing existing code.  
+
+- 📈 **Performance-Ready Foundation**  
+  Designed for benchmarking, experimentation, and algorithm comparisons.  
+
+---
+
+## 🌱 **Future Improvements**
+
+- 🧮 Add **Merge Sort** and **Heap Sort** implementations  
+- 📊 Include **performance comparison** between algorithms  
+- 🖥️ Add a **CLI menu** for algorithm selection  
+- 🧷 Extend the **Binary Tree** into a **Balanced BST** (AVL or Red-Black Tree)  
+
+---
+
