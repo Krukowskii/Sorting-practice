@@ -3,7 +3,7 @@
 int main()
 {
     int n;
-    cout << "\n Please specify the size of the array: ";
+    cout << "\nPlease specify the size of the array: ";
     cin >> n;
     cout << "\n";
     SortingTools sorter1(n);
@@ -18,4 +18,7 @@ int main()
     sorter2.QuickSort(0, n - 1);
     sorter2.printVector();
 
+    SortingTools sorter3(n);
+    sorter3.BinaryTreeFunction();
+    cout << "\n";
 }
